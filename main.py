@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-openai.api_key = 'Tpfr10TXks2NTRlsezAdT3BlbkFJkwjUdMwgojFKFsQrrGDH'
+openai.api_key = os.getenv('OPEN_API')
 
 def load_files():
     text = ""
